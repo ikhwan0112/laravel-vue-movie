@@ -50,7 +50,7 @@
     </div>
 
     <nav class="mt-10">
-      <a
+      <Link
         class="
           flex
           items-center
@@ -60,7 +60,7 @@
           bg-gray-700 bg-opacity-25
           text-gray-100
         "
-        href="#"
+        :href="route('admin.index')"
       >
         <svg
           class="h-6 w-6"
@@ -84,9 +84,9 @@
         </svg>
 
         <span class="mx-3">Dashboard</span>
-      </a>
+      </Link>
 
-      <a
+      <Link
         class="
           flex
           items-center
@@ -96,7 +96,7 @@
           text-gray-500
           hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100
         "
-        href="#"
+        :href="route('admin.movies.index')"
       >
         <svg
           class="h-6 w-6"
@@ -114,8 +114,8 @@
         </svg>
 
         <span class="mx-3">Movies</span>
-      </a>
-      <a
+      </Link>
+      <Link
         class="
           flex
           items-center
@@ -125,7 +125,7 @@
           text-gray-500
           hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100
         "
-        href="#"
+        :href="route('admin.tv-shows .index')"
       >
         <svg
           class="h-6 w-6"
@@ -142,9 +142,9 @@
           />
         </svg>
 
-        <span class="mx-3">Series</span>
-      </a>
-      <a
+        <span class="mx-3">Tv Shows</span>
+      </Link>
+      <Link
         class="
           flex
           items-center
@@ -154,7 +154,7 @@
           text-gray-500
           hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100
         "
-        href="#"
+        :href="route('admin.genres.index')"
       >
         <svg
           class="h-6 w-6"
@@ -172,8 +172,8 @@
         </svg>
 
         <span class="mx-3">Genres</span>
-      </a>
-      <a
+      </Link>
+      <Link
         class="
           flex
           items-center
@@ -183,7 +183,7 @@
           text-gray-500
           hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100
         "
-        href="#"
+        :href="route('admin.casts.index')"
       >
         <svg
           class="h-6 w-6"
@@ -201,8 +201,8 @@
         </svg>
 
         <span class="mx-3">Casts</span>
-      </a>
-      <a
+      </Link>
+      <Link
         class="
           flex
           items-center
@@ -212,7 +212,7 @@
           text-gray-500
           hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100
         "
-        href="#"
+        :href="route('admin.tags.index')"
       >
         <svg
           class="h-6 w-6"
@@ -230,13 +230,13 @@
         </svg>
 
         <span class="mx-3">Tags</span>
-      </a>
+      </Link>
     </nav>
   </div>
 </template>
 
-<script>
-export default {};
+<script setup>
+import { Link } from "@inertiajs/inertia-vue3"
 </script>
 
 <style>
