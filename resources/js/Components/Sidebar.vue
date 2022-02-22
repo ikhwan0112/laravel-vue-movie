@@ -125,7 +125,7 @@
           text-gray-500
           hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100
         "
-        :href="route('admin.tv-shows .index')"
+        :href="route('admin.tv-shows.index')"
       >
         <svg
           class="h-6 w-6"
